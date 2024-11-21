@@ -8,6 +8,6 @@ class CheckListAdmin(admin.ModelAdmin):
     list_display = ['id', 'title', 'is_deleted', 'is_archived', 'created_at', 'updated_at']
 
 
-@admin.register(CheckList)
+@admin.register(CheckListItem)
 class CheckListAdmin(admin.ModelAdmin):
     list_display = ['id', 'checklist', 'is_checked', 'created_at', 'updated_at']
